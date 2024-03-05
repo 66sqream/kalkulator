@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(87, 87, 87);
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    color: #fff;
+}
+
+.kalkulator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #a1a1a1;
+    border-radius: 20px;
+    padding: 40px 40px;
+    gap: 40px;
+    .lines {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input {
+            background: none;
+            border: 1px solid #000;
+            border-radius: 20px;
+            width: 400px;
+            height: 50px;
+            padding: 0px 30px 0px 30px;
+            transition: all .5s;
+            font-size: 24px;
+            &:hover {
+                opacity: 60%;
+            }
+        }
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        .row {
+            button {
+                width: 170px;
+                height: 60px;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: ease-in-out 0.2s;
+                &:hover {
+                    opacity: 60%;
+                }
+            }
+        }
+        button {
+            width: 170px;
+            height: 60px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: ease-in-out 0.2s;
+            &:hover {
+                opacity: 60%;
+            }
+        }
+    }
+    .rezultat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000;
+        border-radius: 20px;
+        width: 400px;
+        height: 50px;
+        font-size: 24px;
+    }
+}
